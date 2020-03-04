@@ -26,4 +26,4 @@ La interferencia es un fenomeno que muestra como interactuan las ondas entre si.
 
 # Uso 
 
-Se enciende el laser y se dezplaza las ventanas por medio de la corrediza. 
+Se enciende el laser y se dezplazan las ventanas por medio de la corrediza. 
