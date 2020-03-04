@@ -24,6 +24,10 @@ La interferencia es un fenomeno que muestra como interactuan las ondas entre si.
 8. Se ubica el 1/8 de carto paja con las ventanas en la corrrediza de la mitad de la base
 9. Se unbica de forma estatica el laser al inicio de la base, procurando que la altura corresponda a la de las ventanas.
 
+##EXPLICACION
+En este experimento vamos a utilizar un laser que arroja punto de luz, reflejandose una placa de papel aluminio con dos rendijas. Los electrones que conforman el laser de luz tienen la misma posibilidad de atravesar por alguna de las dos redijas, esto quiere decir que no puede pasar por las dos.
+
+
 ## USO 
 
 Se enciende el laser y se dezplazan las ventanas por medio de la corrediza. 
