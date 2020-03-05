@@ -4,8 +4,6 @@ def accion(matriz, vector):
         for j in range(len(vector)):
             v[i] += round(matriz[i][j] * vector[j],2)
     return v
-
-
 def matrizProbabilidad(rendijas, objetivos):
     dimensiones = rendijas + objetivos + 1 # Se añade una fila para colocar el vector de estado final
     matriz =[[0.0 for j in range(dimensiones)] for i in range(dimensiones)]
@@ -26,15 +24,10 @@ def matrizProbabilidad(rendijas, objetivos):
                 matriz[i][fin] = round(1 / (aux1), 2)
         ini+=aux2
         fin+=1
-
     return matriz
-
-
 def escribir(matriz):
     for i in matriz:
         print(i)
-
-
 def estadoFinal(rendijas, objetivos, repeticiones):
     matriz_Probabilidad = matrizProbabilidad(rendijas, objetivos)
     print("Matriz de probabilidad")
