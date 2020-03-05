@@ -5,9 +5,8 @@ def accion(matriz, vector):
             v[i] += round(matriz[i][j] * vector[j],2)
     return v
 def matrizProbabilidad(rendijas, objetivos):
-    dimensiones = rendijas + objetivos + 1 # Se añade una fila para colocar el vector de estado final
+    dimensiones = rendijas + objetivos + 1
     matriz =[[0.0 for j in range(dimensiones)] for i in range(dimensiones)]
-    posiciones=[]
     for i in range(dimensiones):
         if (i>=rendijas+1):
             matriz[i][i]=1.0
