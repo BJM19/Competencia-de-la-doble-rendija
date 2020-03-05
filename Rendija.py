@@ -1,6 +1,3 @@
-from sys import stdin
-
-
 def accion(matriz, vector):
     v = [0 for i in range(len(matriz))]
     for i in range(len(matriz)):
