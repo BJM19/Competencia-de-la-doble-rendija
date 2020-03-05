@@ -14,10 +14,10 @@ def matrizProbabilidad(rendijas, objetivos):
         if (i>=1 and i<rendijas+1):
             matriz[i][0] = round(1 / rendijas, 3)
     fin,ini= 1,rendijas + 1
-    if rendijas%2 == 0:
-        aux1 = (objetivos + 1) //2; aux2 = aux1 - aux1 //2  #Catidad de objetivos
-    else:
-        aux1 = objetivos  // 2; aux2 = aux1 - aux1 // 2 #Catidad de objetivos
+    if rendijas%2 == 0: #Numero par de rendijas
+        aux1 = (objetivos + 1) //2; aux2 = aux1 - aux1 //2  #Cantidad de objetivos
+    elif rendijas%2 == 1:# impar de rendijas
+        aux1 = objetivos  // 2; aux2 = aux1 - aux1 // 2 #Cantidad de objetivos
     while ini <= len(matriz) - aux1 and fin < rendijas + 1:
         for i in range(ini+aux1):
             if i>=ini:
@@ -33,6 +33,6 @@ def estadoFinal(rendijas, objetivos, repeticiones):
     print("Matriz de probabilidad")
     escribir(matriz_Probabilidad)
     estadoFinal = [1] + [0 for i in range(rendijas + objetivos)]
-    for i in range(repeticiones):
+    for i in range(repeticiones): # Calcula la probabilidad del estado final
         estadoFinal = accion(matriz_Probabilidad,estadoFinal)
     return estadoFinal
