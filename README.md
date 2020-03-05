@@ -52,7 +52,7 @@ En este experimento vamos a utilizar un laser que arroja punto de luz, reflejand
 
 ## GRAFO
 
-![](imagenes/grafo_de_1_rendija.png)
+![](imagenes/grafo_de_1_rendija.jpeg)
 
 ## SIMULACION 2 RENDIJA
 
@@ -60,11 +60,15 @@ En este experimento vamos a utilizar un laser que arroja punto de luz, reflejand
 
 ## GRAFO
 
-![](imagenes/grafo_de_2_rendijas.png)
+![](imagenes/grafo_de_2_rendijas.jpeg)
 
 ## SIMULACION 3 RENDIJA
 
 ![](imagenes/Rendija_3.png)
+
+## GRAFO
+
+![](imagenes/grafo_de_3_rendijas.jpeg)
 
 ## USO 
 
