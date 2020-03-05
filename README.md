@@ -1,4 +1,4 @@
-# COMPETENCIA DE LA DOBLE RENDIJA
+﻿# COMPETENCIA DE LA DOBLE RENDIJA
 
 En este experimento se mostrara, tres diferentes ventanas con una, dos y tres rendijas, las cuales son suficientemente pequeñas para mostrar un patron de interferencia. 
 
@@ -46,6 +46,25 @@ La interferencia es un fenomeno que muestra como interactuan las ondas entre si.
 ## EXPLICACION
 En este experimento vamos a utilizar un laser que arroja punto de luz, reflejandose una placa de papel aluminio con dos rendijas. Los electrones que conforman el laser de luz tienen la misma posibilidad de atravesar por alguna de las dos redijas, esto quiere decir que no puede pasar por las dos.
 
+## SIMULACION 1 RENDIJA
+
+![](imagenes/Rendija_1.png)
+
+## GRAFO
+
+![](imagenes/grafo_de_1_rendija.png)
+
+## SIMULACION 2 RENDIJA
+
+![](imagenes/Rendija_2.png)
+
+## GRAFO
+
+![](imagenes/grafo_de_2_rendijas.png)
+
+## SIMULACION 3 RENDIJA
+
+![](imagenes/Rendija_3.png)
 
 ## USO 
 
