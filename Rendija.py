@@ -31,7 +31,7 @@ def estadoFinal(rendijas, objetivos, repeticiones):
     matriz_Probabilidad = matrizProbabilidad(rendijas, objetivos)
     print("Matriz de probabilidad")
     escribir(matriz_Probabilidad)
-    estadoFinal = [1] + [0 for i in range(rendijas + objetivos)]
+    estadoFinal = [1.0] + [0 for i in range(rendijas + objetivos)]
     for i in range(repeticiones): # Calcula la probabilidad del estado final
         estadoFinal = accion(matriz_Probabilidad,estadoFinal)
     return estadoFinal
