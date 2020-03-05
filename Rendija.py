@@ -1,3 +1,6 @@
+def escribir(matriz):
+    for i in matriz:
+        print(i)
 def accion(matriz, vector):
     v = [0 for i in range(len(matriz))]
     for i in range(len(matriz)):
@@ -7,11 +10,18 @@ def accion(matriz, vector):
 def matrizProbabilidad(rendijas, objetivos):
     dimensiones = rendijas + objetivos + 1
     matriz =[[0.0 for j in range(dimensiones)] for i in range(dimensiones)]
+    posiciones=[]
+    posiciones2=[]
     for i in range(dimensiones):
         if (i>=rendijas+1):
-            matriz[i][i]=1.0
+            posiciones.append([i,i])
+    for i in range(len(posiciones)):
+        matriz[posiciones[i][0]][posiciones[i][1]]=1.0
+    for i in range(dimensiones):
         if (i>=1 and i<rendijas+1):
-            matriz[i][0] = round(1 / rendijas, 3)
+            posiciones2.append([i,0])
+    for i in range(len(posiciones2)):
+        matriz[posiciones2[i][0]][posiciones2[i][1]]=round(1 / rendijas, 3)
     fin,ini= 1,rendijas + 1
     if rendijas%2 == 0: #Numero par de rendijas
         aux1 = (objetivos + 1) //2; aux2 = aux1 - aux1 //2  #Cantidad de objetivos
@@ -24,9 +34,6 @@ def matrizProbabilidad(rendijas, objetivos):
         ini+=aux2
         fin+=1
     return matriz
-def escribir(matriz):
-    for i in matriz:
-        print(i)
 def estadoFinal(rendijas, objetivos, repeticiones):
     matriz_Probabilidad = matrizProbabilidad(rendijas, objetivos)
     print("Matriz de probabilidad")
@@ -35,3 +42,4 @@ def estadoFinal(rendijas, objetivos, repeticiones):
     for i in range(repeticiones): # Calcula la probabilidad del estado final
         estadoFinal = accion(matriz_Probabilidad,estadoFinal)
     return estadoFinal
+
